@@ -1,4 +1,4 @@
-const API_BASE = "https://backend-95jb.onrender.com/api";
+const API_BASE = "http://localhost:3001/api";
 
 // ========================
 // GOOGLE DRIVE LIST
@@ -44,8 +44,8 @@ async function loadBlob() {
 // SYNC
 // ========================
 async function startSync() {
-  document.getElementById("status-box").textContent =
-    "Executando sincronização...";
+  document.getElementById("status-box").textContent;
+  ("Executando sincronização...");
 
   const res = await fetch(`${API_BASE}/sync`, { method: "POST" });
   const result = await res.json();
